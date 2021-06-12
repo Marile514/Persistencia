@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void buttonActions(View boton){
-        if(boton.getId() == R.id.btn1){
+        if(boton.getId() == R.id.btn1){  //Función del boton grabar.
             try {
                 OutputStreamWriter bx = new OutputStreamWriter(openFileOutput("usuarios.txt", Activity.MODE_APPEND));
 
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.e("TAG_", ex.toString());
             }
 
-        }else if(boton.getId() == R.id.btn2){
+        }else if(boton.getId() == R.id.btn2){  //Función del boton leer.
             try{
                 InputStreamReader vsi = new InputStreamReader(openFileInput("usuarios.txt"));
 
